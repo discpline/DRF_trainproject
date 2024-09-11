@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'scripts.js' %}"></script>
+</head>
+<body>
+    <div id="auth-buttons">
+        <button id="login-button">Login</button>
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <div id="token-info">
+        <p>Access Token: <span id="access-token"></span></p>
+        <p>Refresh Token: <span id="refresh-token"></span></p>
+    </div>
+
+    <h2>Product List</h2>
+    <ul id="product-list"></ul>
+
+
+</body>
+</html>
